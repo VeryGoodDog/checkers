@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+#board {
+  border: 3px solid black;
+  margin: auto;
+  width: 40%;
+  max-width: 30em;
+}
+
+#header {
+  margin: 1em;
+  min-height: 2em;
+}
+
+#playerCont {
+  padding: auto;
+  float: left;
+}
+
+#playerTag {
+  float: left;
+}
+
+#playerBoard {
+  float: right
+}
+
+#restartButton {
+  float: right;
+}
+
+.playerMessage {
+  padding: auto;
+}
+
+.c {
+  float: left;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.white {
+  background-color: white;
+}
+
+.checker {
+  border-radius: 50%;
+}
+
+.king {
+  border-radius: 20%;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.black {
+  background-color: black;
+}
