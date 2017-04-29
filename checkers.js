@@ -32,7 +32,7 @@ function generateChecker(x,y,classes) {
     stop: function (event) {
       var column = Number(event.target.dataset.ccolumn);
       var row = Number(event.target.dataset.crow);
-      if (validDrop && !(event.target.dataset.crow === transferLoc[0] && event.target.dataset.ccolumn === transferLoc[1])) {
+      if (validDrop && !(row === transferLoc[0] && column === transferLoc[1])) {
         deleteChecker(column,row);
         generateChecker(transferLoc[1],transferLoc[0],event.target.classList);
         validDrop = false;
