@@ -77,6 +77,7 @@ function init() {
   .dblclick(function (event) {
     if (event.target.dataset != undefined) {
       deleteChecker(event.target.dataset.ccolumn,event.target.dataset.crow);
+      disableAllSpots();
     }
   })
   .droppable({
@@ -146,7 +147,7 @@ function togglePlayer() {
   if (currentPlayer === 'grey') {
     currentPlayer = 'black';
     $('#playerBoard')
-    .html('Red');
+    .html('Black');
     $('.grey')
     .draggable('disable');
     $('.black')
@@ -154,7 +155,7 @@ function togglePlayer() {
   } else {
     currentPlayer = 'grey';
     $('#playerBoard')
-    .html('White');
+    .html('Grey');
     $('.black')
     .draggable('disable');
     $('.grey')
